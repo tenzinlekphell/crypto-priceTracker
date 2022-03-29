@@ -1,13 +1,199 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+h1,
+h2,
+p,
+ul,
+li {
+  font-family: "League Spartan", sans-serif;
+  color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.headerIcon {
+  margin-left: 1rem;
+  height: 4rem;
+  width: 4rem;
+}
+
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+ul.header {
+  padding: 0;
+  background-color: #00bfa6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.header li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+  background-color: #00bfa6;
+}
+
+.close-btn {
+  float: right;
+  color: #000000;
+  margin: 1.3rem;
+}
+
+.content {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
+}
+
+.active {
+  background-color: #0099ff;
+}
+
+.logoAndtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#logo-header {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.homepage-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hello-img {
+  height: 19rem;
+  width: 30rem;
+}
+
+.search-bar {
+  padding: 0.5rem;
+  width: 30%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.5rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem #0099ff;
+  outline: none;
+}
+
+.search-inputAndbtn {
+  display: flex;
+  width: 100%;
+}
+
+.items {
+  margin: 0.5rem;
+  background-color: #0099ff;
+  padding: 0.5rem;
+  margin: 0;
+  border-bottom-right-radius: 15%;
+  border-top-right-radius: 15%;
+  cursor: pointer;
+}
+
+.dataResult {
+  margin-top: 0.5rem;
+  width: 11.7rem;
+  height: 10rem;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.dataResult::-webkit-scrollbar {
+  display: none;
+}
+
+.dataItem {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+}
+
+.dataItem p {
+  margin: 0.5rem;
+}
+
+.dataItem:hover {
+  background-color: lightgray;
+}
+
+#clearBtn {
+  cursor: pointer;
+}
+
+#myBtn {
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .hello-img {
+    height: 10rem;
+    width: 20rem;
+  }
+  .logoAndtitle {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headerIcon {
+    height: 5rem;
+    width: 10rem;
+    margin-bottom: 3rem;
+  }
+  .search-bar {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    margin-bottom: 0.5rem;
+  }
+  .hello-img {
+    height: 10rem;
+    width: 10rem;
+  }
+  .homepage-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ul header {
+    background-color: red;
+  }
+
+  .close-btn {
+    display: block;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
 }
